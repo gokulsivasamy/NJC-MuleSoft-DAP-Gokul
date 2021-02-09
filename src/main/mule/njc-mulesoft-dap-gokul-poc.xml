@@ -10,6 +10,7 @@ http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/m
     <db:config name="Database_Config" doc:name="Database Config" doc:id="09484f76-a0ec-43e1-845f-2dd679e24c75" >
 		<db:my-sql-connection host="mudb.mulesoft-training.com" port="3306" user="mule" password="mule" database="training" />
 	</db:config>
+	<api-gateway:autodiscovery apiId="16624916" ignoreBasePath="true" doc:name="API Autodiscovery" doc:id="b9aa94bd-2f41-4a05-a63b-5450e8c1e21c" flowRef="njc-mulesoft-dap-gokul-poc-main" />
 	<flow name="njc-mulesoft-dap-gokul-poc-main">
         <http:listener config-ref="njc-mulesoft-dap-gokul-poc-httpListenerConfig" path="/api/*">
             <http:response statusCode="#[vars.httpStatus default 200]">
