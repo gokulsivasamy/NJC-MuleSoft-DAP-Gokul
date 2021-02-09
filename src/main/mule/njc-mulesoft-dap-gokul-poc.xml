@@ -149,7 +149,7 @@ payload]]></ee:set-payload>
 				<ee:set-payload ><![CDATA[%dw 2.0
 output application/json
 ---
-"Data Successfully Inserted into DB"]]></ee:set-payload>
+"Data is Successfully Inserted into DB"]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
 		<logger level="INFO" message="#[payload]" />
